@@ -30,7 +30,6 @@ Update the .env file with your database credentials and mail configuration:
     DB_USERNAME=your_username
     DB_PASSWORD=your_password
     
-    # Mail Configuration for Email Verification
     MAIL_MAILER=smtp
     MAIL_HOST=smtp.mailtrap.io
     MAIL_PORT=2525
