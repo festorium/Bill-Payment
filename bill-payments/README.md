@@ -7,14 +7,14 @@ User Authentication (Register, Login, Email Verification)
 Transaction Management (Create, Read, Update, Delete)
 JWT Authentication for secure access to protected routes
 
-#Requirements
+# Requirements
 PHP >= 8.0
 Composer
 MySQL or any other supported database
 Laravel 9.x
 Mailtrap (or any SMTP email service for testing)
 
-#Setup Instructions
+# Setup Instructions
 1. Clone the repository -- git clone https://github.com/festorium/bill-payment.git
 cd bill-payment
 
@@ -56,7 +56,7 @@ You should now be able to access the API at http://localhost:8000.
 8. Mail Setup for Email Verification
 Make sure your mail configuration is set up in .env. You can use Mailtrap for local development to test email functionality. Set the credentials in the .env file as shown in the Configure Environment Variables section.
 
-#API Endpoints
+# API Endpoints
 Authentication
 POST /register – Register a new user
 POST /login – Log in to the system
@@ -72,14 +72,14 @@ Token Management (Protected Routes)
 GET /refresh-token – Refresh the JWT token
 GET /logout – Log out the user
 
-#Running Unit Tests
+# Running Unit Tests
 The API includes unit tests to ensure the code works as expected. To run the tests, follow these steps:
 
 Ensure you have set up your testing environment in the .env.testing file: -- cp .env .env.testing
 Run the PHPUnit tests: --php artisan test
 This will run all the unit tests in the tests directory.
 
-#Notes
+# Notes
 Ensure that your mail server is set up correctly for sending verification emails.
 Use Postman or any other API client to test the API endpoints.
 Transactions can only be accessed when logged in, as they are protected routes using JWT.
